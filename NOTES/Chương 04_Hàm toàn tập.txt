@@ -1,0 +1,39 @@
+Bài 29: function cơ bản
+- Khai báo function
+-> Cú pháp(Syntax): function functionName(parameters, parameters) {
+  // code
+}
+- Cách gọi function(invoke function)
+-> functionName();
+- Ko có return thì kết quả trả về của hàm là undefined
+- Gán giá trị mặc định cho hàm khi gọi hàm ko truyền giá trị
+- functionName(parameter = defaultValue) {}
+- Hàm sẽ bị hoisting
+- Syntax function -> parameter: tham số
+- invoke function -> arguments: đối số
+
+Bài 30: function cơ bản phần 2
+- Lưu function vào 1 biến
+- Tham số là function
+
+Bài 31: function cơ bản phần 3
+- Function declaration(function có tên): function có khai báo
+- Anonymous function(function expression): function ko có tên
+- Anonymous function: ko bị hoisting
+- Immmediately invoked function execution (IIFE): function này sẽ chạy ngay lập tức khi viết
+
+Bài 32: global scope và function scope
+- Scope: phạm vi của biến mà ta có thể truy xuất đến được
+- Global scope: ở đâu cũng sử dụng đc
+- function scope: chỉ sử dụng đc trong phạm vi của function
+
+Bài 33: Block scope và từ khoá var
+- Khi dùng từ khóa var để khai báo biến trong block scope thì var là global scope ko phải là block scope
+
+Bài 34: Closure cơ bản
+- Lexical scope: định nghĩa phạm vi của biến đó
+- Closure: là nhiều function đc lồng vào nhau, cho phép truy xuất từ function bên trong ra function bên ngoài.
+Trong JS closure đc tạo mỗi khi function đc tạo
+
+Bài 39: Arrow function 
+- Là function Anonymous function

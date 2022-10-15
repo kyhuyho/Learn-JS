@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container p {
+  margin-bottom: 20px;
+}
+.container img {
+  margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+.container img.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}

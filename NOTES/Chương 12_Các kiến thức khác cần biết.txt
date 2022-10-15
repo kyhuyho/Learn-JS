@@ -1,0 +1,46 @@
+Bài 278: Các kiến thức hay khác cần biết
+1. Sự khác nhau giữa i++ và ++i
+2. Lưu ý khi return của function
+3. 2 cách mới dùng để chuyển đổi kiểu dữ liệu
+- Cách 1: dùng dấu + trước biến để đổi sang kiểu dữ liệu là number
+- Cách 2: !! dùng để đổi sang kiểu dữ liệu boolean
+
+Bài 279: arguments trong function
+- arguments giống như mảng nhưng ko phải mảng
+
+Bài 280: Câu hỏi phỏng vấn về closure
+- var bị hoisting
+- scope của var sau mỗi vòng lặp thì nó k thay đổi
+
+Bài 281: Sự khác nhau giữa localStorage và sessionStorage
+- localStorage: Lưu trữ dữ liệu ở trên web khi reload lại hay tắt đi thì dữ liệu vẫn còn
+- sessionStorage: chỉ lưu dữ liệu khi còn để tab còn khi đóng tab mở lại thì nó sẽ mất dữ liệu
+
+Bài 282: Cách sử dụng arrow function hiệu quả
+- Khi viết event hanlder nếu dùng arrow function thì dùng từ khóa this thì chương trình sẽ ko hiểu
+
+Bài 283: Đệ quy là gì ?
+- Là trong 1 hàm nó gọi lại chính nó
+Bài 284 285: Bài tập đệ quy phần 1 2
+Bài 286: Tìm hiểu object Set
+- Nó là 1 object lưu trữ những giá trị duy nhất
+- const mySet = new Set()
+- mySet.add(value): thêm giá trị
+- mySet.has(value): kiểm tra trong Set có value ko
+- mySet.delete(value): xóa value trong Set
+- mySet.size: trả về số lượng phần tử trong Set
+- mySet.clear(): xóa hết phần tử trong Set
+- Để loop qua Set thì dùng for of
+
+Bài 288 289: Location trong BOM
+- Browser Object Modal(BOM): alert, prompt, confirm, window
+- location.href: điều hướng sang 1 trang web mới
+
+Bài 290: History trong BOM
+- Dùng để lui lại hoặc tiến tới 1 trang web khác
+- history.back(): quay lại trang trước đó
+- history.forward(): đến trang tiếp theo
+- history.go(-n): quay lại trang trước đó (n trang)
+
+Bài 291: Navigator trong BOM
+- Dùng để biết người dùng truy cập vào web bằng thiết bị gì hoặc trình duyệt gì

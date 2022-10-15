@@ -1,0 +1,26 @@
+Bài 313: Global execution context
+Bài 314: Function execution context
+Bài 315: Callstack
+- Dùng để quản lý execution context
+- JS mặc định là đồng bộ chứ ko phải là bất đồng bộ
+Bài 316 317: Tìm hiểu event loop phần 1 2
+- web APIs: setTimeout, fetch request, DOM Event
+Bài 318: Callback hell
+Bài 319: Promise phần 1
+- Có 3 trạng thái: Pending, Resolve, Reject
+Bài 320: Promise phần 2
+- .then(onfulfilled, onrejected)
+- onfulfilled -> resolve
+- onrejected -> reject
+Bài 321: Promise phần 3
+- catch((error) => {}): dùng để bắt lỗi
+Bài 322: Promise phần 4
+Bài 323: Promise phần 5
+- Promise.all([]): trả về cùng lúc, nó trả về resolve khi tất cả đều resolve, trả về reject khi có 1 cái reject
+- Promise.race([]): cái nào thời gian ngắn hơn thì trả về cái đó, nếu có cả resolve và reject thì cái nào nhanh hơn thì trả về cái đó
+
+Bài 324: Promise phần 6
+- Promise.setteled([]): trả về 1 mảng cho dù có reslove hay reject
+Bài 325: try catch
+Bài 326: async await phần 1
+- await chỉ hoạt động trong function sử dụng async

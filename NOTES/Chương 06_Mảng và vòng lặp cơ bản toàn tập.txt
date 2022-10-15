@@ -1,0 +1,143 @@
+Bài 55: Giới thiệu về mảng
+- Mảng là danh sách chứa nhiều giá trị
+- Có 2 cách tạo mảng
++ Cách 1: array literal
++ Cách 2: array constructor
+
+Bài 55.5: Giới thiệu về mảng bổ sung
+- index: vị trí của phần tử(giá trị) trong mảng và nó bắt đầu từ 0
+- length: độ dài của mảng đếm từ 1
+- Khi truy xuất 1 phần tử của mảng mà chỉ số vượt quá chỉ số index trong mảng thì giá trị trả về sẽ là undefined
+- Lấy phần tử cuối cùng của mảng = độ dài mảng - 1 (array.length - 1)
+
+Bài 56: Các phương thức trong mảng phần 1
+- length: trả về độ dài của mảng
+- reverse(): đảo ngược những phần tử trong mảng
+- join(): nối các phần tử trong mảng thành chuỗi, mảng sẽ nối lại và có dấu phẩy giữa các phần tử
+- join(ký tự): mảng sẽ nối lại và có ký tự mà mình muốn giữa các phần tử
+- includes(phần tử): kiểm tra xem phẩn tử đó có trong mảng không, nếu có trả về true và nếu ko có sẽ trả về false
+
+Bài 57: Các phương thức trong mảng phần 2
+- indexOf(phần tử): trả về vị trí của phần tử đầu tiên tìm thấy
+- lastIndexOf(phần tử): trả về vị trí của phần tử cuối cùng tìm thấy
+- push(phần tử): thêm phần tử vào cuối mảng
+- unshift(phần tử): thêm phần tử vào đầu mảng
+- pop(): xóa phần tử cuối cùng trong mảng
+- shift(): xóa phần tử đầu tiên trong mảng
+
+Bài 58: Tìm hiểu phương thức slice
+- Tạp ra 1 mảng mới từ mảng đã có ban đầu
+- slice(): tạo ra 1 mảng mới y hệt mảng ban đầu
+- slice(start): tạo ra mảng mới lấy từ vị trí start về sau
+-> start là chỉ số index trong mảng
+- slice(start, end): tạo ra mảng mới lấy từ vị trí start đến vị trí (end - 1)
+-> start và end là chỉ số index trong mảng
+- slice(số âm): tạo ra mảng mới lấy từ cuối lên đầu
+
+Bài 59: Tìm hiểu phương thức splice
+- splice sẽ xóa phần tử trong mảng hoặc xóa phần tử trong mảng
+- splice(start): tạo ra mảng mới lấy từ vị trí start về sau hoặc xóa start phần tử trong mảng 
+- splice(start, deleteCount): xóa phần tử theo số lượng từ vị trị start
+-> deleteCount là số lượng phần tử muốn xóa
+- splice(start, deleteCount, item1, item2, itemN): xóa phần tử theo số lượng và thêm phần tử vào mảng hoặc thêm phần tử vào vị trí đã xóa
+
+Bài 60: Tìm hiểu phương thức sort
+- sort sẽ sắp xếp các phần tử trong mảng theo chuẩn unicode-16
+
+Bài 61: Tìm hiểu phương thức find
+- find sẽ trả về phần tử tìm thấy đầu tiên trong mảng thỏa 1 điều kiện nào đó
+- Nếu ko tìm thấy phần tử thỏa điều kiện thì nó sẽ trả ra undefined
+
+Bài 62: Tìm hiểu phương thức findIndex
+- findIndex sẽ trả về vị trí tìm thấy đầu tiên trong mảng thỏa 1 điều kiện nào đó
+- Nếu ko tìm thấy vị trí thỏa điều kiện thì nó sẽ trả ra -1
+
+Bài 63: Tìm hiểu phương thức sort bổ sung
+
+Bài 64: Tìm hiểu phương thức map
+- map sẽ duyệt qua từng phần tử trong mảng và trả ra 1 mảng mới mà ko thay đổi giá trị mảng ban đầu
+- map(value, index, array) -> value: là các giá trị trong mảng ban đầu, index là chỉ số các phần tử trong mảng ban đầu, array là mảng ban đầu
+
+Bài 65: Tìm hiểu phương thức forEach
+- forEach giống như map nhưng ko trả ra 1 mảng mới và ko có giá trị trả  về
+
+Bài 66: Tìm hiểu phương thức filter
+- filter dùng để lọc các phần tử trong mảng thỏa điều kiện nào đó
+- Nếu ko tìm thấy phần tử thỏa điều kiện thì nó sẽ trả ra 1 mảng trống
+
+Bài 67: Tìm hiểu phương thức some và every
+- some sẽ trả về true khi thỏa 1 điều kiện và ngược lại trả về false khi ko thỏa điều kiện nào cả
+- every chỉ trả về true khi tất cả điều kiện đều đúng ngược lại chỉ cần có 1 cái sai thì nó sẽ trả về false
+
+Bài 68: Tìm hiểu phương thức reduce
+- reduce sẽ gom các phần tử trong mảng lại thành 1
+
+Bài 69: Bài tập về mảng số 1
+Bài 70: Bài tập về mảng số 2
+Bài 71: Bài tập về mảng số 3
+
+Bài 72: By value và by references
+- By value: giá trị thực sự được lưu trong vùng bộ nhớ
+- By references: nói tới vùng bộ nhớ nhưng ko biết là vùng bộ nhớ nào cả
+
+Bài 73: Cách so sánh 2 mảng cơ bản
+- JSON(Javascript Object Notation): là 1 kiểu dữ liệu tuân theo 1 quy tắc nhất định
++ JSON.stringify(value): convert giá trị sang dưới dạng JSON string
++ JSON.parse(value)
+
+Bài 74: 2 cách để sao chép mảng cần biết
+- Cách 1: Sử dụng phương thức slice()
+- Cách 2: spread operator 
+-> [...array]
+
+Bài 75: 2 cách để gộp mảng cần nắm
+- Cách 1: Sử dụng concat
+-> arr1.concat(arr2, arr3, arrN)
+- Cách 2: Sử dụng spread operator
+-> [...arr1,...arr2,...arrN]
+
+Bài 76: Destructuring là gì ?
+- const/let [indexName, indexName, indexName,...] = array
+
+Bài 77: Tìm hiểu rest parameter
+- resr parameter ...: sẽ là 1 mảng chứa các phần tử còn lại
+
+Bài 78: Vòng lặp for cơ bản phần 1
+
+Bài 79: Vòng lặp for cơ bản phần 2
+- break: dùng để thoát vòng lặp
+- continue: dùng để bỏ qua lần lặp ko thực hiện những đoạn code phía sau continue
+
+Bài 80: Vòng lặp for cơ bản phần 3
+
+Bài 81: Vòng lặp for cơ bản phần 4
+
+Bài 82: Bài tập cơ bản về vòng lặp for
+
+Bài 83: Vòng lặp while và do while
+- loop while: check điều kiện trước rồi mới xử lý
+- loop do...while: xử lý rồi mới check điều kiện
+
+Bài 84: Vòng lặp for of
+- Thường được dùng trong mảng, string, object
+- Cú pháp: for (variable of array) {}
+
+Bài 85: Bài tập chương 6 số 1 và 2
+- flat(number): dùng để biến 1 mảng phức tạp thành 1 mảng đơn giản 
+-> Từ khóa flattern array
+
+Bài 86: Bài tập chương 6 số 3
+- Math.sign(number)
+-> number > 0 -> trả về 1
+-> Number < 0 -> trả về -1
+
+Bài 87: Bài tập chương 6 số 4
+
+Bài 88: Bài tập chương 6 số 5
+
+Bài 89: Bài tập chương 6 số 6
+- Array.isArray(array): nếu là 1 mảng thì trả về true ngược lại thì trả về false
+
+Bài 90: Bài tập chương 6 số 7
+
+

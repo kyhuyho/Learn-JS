@@ -1,0 +1,17 @@
+Bài 298: Giới thiệu class
+Bài 299: setter và getter
+- getter: dùng để lấy thông tin
+- setter: dùng để thay đổi
+
+Bài 300: class expression
+- Là class ko có tên nên khi dùng class này khai báo phải lưu nó vào 1 biến
+
+Bài 301: static method là gì ?
+- Dùng để thực hiện 1 chức năng từ class mà ko cần thông qua từ khóa new nếu dùng new để tạo object thì sẽ lỗi
+
+Bài 302: static property là gì ?
+- Ko phụ thuộc vào từ khóa new
+
+Bài 303: Tìm hiểu super và extends
+- extend: tạo ra class kế thừa từ class cha
+- super: dùng để kế thừa từ constructor của class cha

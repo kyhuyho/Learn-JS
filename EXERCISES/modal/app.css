@@ -1,0 +1,42 @@
+.button {
+  padding: 20px;
+  font-size: 25px;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+  border: 0;
+  background-color: #07a787;
+  border-radius: 10px;
+  color: white;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2979ff;
+  cursor: zoom-out;
+}
+.modal-content {
+  width: 800px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: auto;
+}
+.modal-close {
+  position: absolute;
+  font-size: 18px;
+  right: 10px;
+  top: 10px;
+  background-color: #07a787;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin: 100px auto;
+}
+.menu-item {
+  width: calc(25% - 20px);
+}
+.menu-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.line-effect {
+  width: 0;
+  height: 3px;
+  background-color: #6c7de2;
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.3s linear;
+}

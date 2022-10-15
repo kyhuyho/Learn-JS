@@ -1,0 +1,24 @@
+.counter {
+  width: max-content;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+}
+.counter-descrease,
+.counter-increase {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: gray;
+}
+.counter-number {
+  font-size: 100px;
+  margin: 0 20px;
+  background-image: linear-gradient(to right, #00aefd, #ffb86c);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

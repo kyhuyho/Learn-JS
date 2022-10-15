@@ -1,0 +1,24 @@
+.form-course {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+}
+.form-course input {
+  padding: 10px 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+}
+.form-course button {
+  background-color: #6a5af9;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}

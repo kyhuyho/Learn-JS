@@ -1,0 +1,48 @@
+.header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  animation: fade 0.5s forwards 1 linear;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item {
+  width: calc(20% - 20px);
+  list-style: none;
+}
+.menu-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1659686928263-5020563f143e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1181&q=80")
+    no-repeat center / cover;
+}
+.content {
+  height: 200vh;
+}

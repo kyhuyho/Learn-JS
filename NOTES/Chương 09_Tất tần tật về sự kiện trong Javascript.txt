@@ -1,0 +1,144 @@
+Bài 149: Giới thiệu
+- Sự kiện là những tương tác trên trang web thông qua chuột hoặc bàn phím
+- Thêm 1 sự kiện: selector.addEventListener("eventName", handle, [options])
+- eventName: click, keydown, keypress, keyup, mouseover, mousemove. mouseleave, load, DOMContentLoaded,...
+- handle: function
+- [options]: capture, bubbling
+
+Bài 150: Sự kiện click
+- Nếu viết handle thành 1 funtion riêng thì khi truyền vào ko invoke function
+
+Bài 151: Bubbling trong sự kiện click
+- Sự kiện click chạy từ trong ra ngoài
+- e.stopPropagation(): ngăn chặn chạy từ trong ra ngoài có nghĩa là click chỗ nào thì chỗ đó chạy(ngăn chặn hiện tượng bubbling trong click)
+- e.stopImmediatePropagation(): chặn hết những sự kiện cùng selector
+
+Bài 152: Capturing trong click
+- capture: true -> chạy từ ngoài vào trong
+
+Bài 153: Sự khác nhau giữa target và currentTarget
+- event.target: nó sẽ chọn chính xác element mà mình click vào
+- event.currentTarget: nó sẽ chọn phần tử mà mình click
+
+Bài 154: preventDefault() để làm gì ?
+- Dùng để ngăn chặn hành vi mặc định của element đó
+
+Bài 155: Bài tập Random background color
+Bài 156: Bài tập Counter
+Bài 157: Tìm hiểu object style
+- selector.style.property = value
+- event.target.style.property = value
+
+Bài 158: Truy suất giá trị của custom attribute
+- custom attribute trong html người ta dùng data-Tên gì đó = value
+- Lấy custom attribute: selector/event.target.dataset.name
+- Khi tên dài: selector/event.target.dataset.nameAbc
+- Nên đặt tên ngắn khi dùng custom attribute
+
+Bài 159 160: Bài tập Toggle menu phần 1 2
+- selector/event.target.matches(".className"): kiểm tra coi có khớp ko
+
+Bài 161 162 163: Bài tập Tab phần 1 2 3
+Bài 164 165 166: Bài tập accordion phần 1 2 3
+- scrollHeight: là chiều cao của phần tử
+Bài 167 168: Bài tập Modal phần 1 2
+Bài 169 170 171 172 173: Bài tập lightbox phần 1 2 3 4 5
+Bài 174 175: Bài tập dropdown phần 1 2
+Bài 176: Sự khác nhau giữa load và DOMContentLoaded
+- document.addEventListener("DOMContentLoaded"): cái này chạy khi HTML đã load xong
+- window.addEventListener("load"): khi web đã load xong
+
+Bài 177: Sự kiện di chuyển chuột cần nắm
+- mousemove: nó sẽ chạy khi di chuyển chuột trên phần tử
+- mouseover: nó sẽ chạy khi rê chuột vào phần tử và con của phần tử đó
+- mouseenter: nó sẽ chạy khi rê chuột vào phần tử
+- mouseleave: nó sẽ chạy khi rê chuột vào phần tử và rê ra ngoài
+
+Bài 178: Sự khác nhau giữa clientXY và pageXY
+- clientY: nó sẽ lấy tọa độ theo viewport
+- pageY: nó sẽ lấy tọa độ của document, khi có scroll thì nó sẽ thay đổi
+-> tương tự cho clientX và pageX
+-> X là chiều ngang, Y là chiều dọc
+
+Bài 179 180 181 182: Bài tập Tooltip phần 1 2 3 4
+Bài 183 184: Bài tập Link hover effect phần 1 2
+Bài 185 186 187 188 189: Bài tập Image zoom hover effect phần 1 2 3 4 5 
+Bài 190: Sự kiện keydown
+- keydown: hoạt động khi nhấn bàn phím xuống
+- e.key: là key nhập vào
+- e.keyCode: 
+- e.which:
+-> 2 cái này đều trả về số tương ứng trong bảng mã ascii
+-> Nên dùng e.key
+
+Bài 191: Sự kiện keyup
+- keyup: sự kiện này sẽ hoạt động khi nhấn phím rồi thả ra
+-> keydown thì có sự kiện e.preventDefault() còn keyup thì ko có
+
+Bài 192: Sự kiện keypress
+- keypress: sự kiện này xảy ra khi nhấn phím
+- keypress sẽ ignore các phím delete, mũi tên, page up, page down, home, end, control, alt, shift, esc,...
+- Thứ tự ưu tiên: keydown -> keypress -> keyup
+
+Bài 193: Sự kiện change
+- change: sự kiện này xảy ra khi chúng ta gõ xong, rồi enter hoặc nhấn chuột ra ngoài 1 lần
+
+Bài 194: Sự kiện focus và blur
+- focus: sự kiện này hoạt động khi nhấn vào input
+- blur: sự kiện này hoạt động khi nhấn vào input rồi nhấn ra ngoài input
+
+Bài 195: Sự kiện submit trong form
+- submit là sự kiện khi làm 1 chức năng như đăng ký đăng nhập bấm nút submit nó sẽ gửi thông tin về phía server
+
+Bài 196: Truy xuất các giá trị trong form cơ bản
+- this: nó là selector mà mình đang add sự kiện
+- Cách lấy danh sách những element nằm trong form
++ this.elements
++ e.target.elements
+-> trả về mảng các element nằm trong form
+- Cách lấy ra element mà mình muốn
++ this.elements[name] hoặc e.target.elements[name]
+- Cách lấy ra giá trị của element
++ this.elements[name].value hoặc e.target.elements[name].value
+
+Bài 197: Truy xuất giá trị của checkboxes như thế nào?
+- Dùng querySelectorAll
+
+Bài 198: Ví dụ về Form Validation cơ bản
+Bài 199: Bài tập Show hide password đơn giản
+Bài 200 201 202 203 204: Bài tập Highlight search text phần 1 2 3 4 5
+- input: là sự kiện nó sẽ lấy các giá trị các ký tự mỗi khi chúng ta gõ
+
+Bài 205: Giới thiệu sự kiện scroll
+- Thường add sự kiện vào window
+
+Bài 206: Debounce là gì?
+- Là kỹ thuật buộc một hàm phải đợi một khoảng thời gian nhất định trước khi thực thi. Trong khoản thời gian đợi, 
+mọi tác động sẽ đều bị bỏ qua và chỉ nhận duy nhất 1 hành động diễn ra trong thời gian chúng ta định trước. -> giúp hạn chế ảnh hưởng hiệu suất website
+Bài 207: window.pageXOffset và window.pageYOffset
+- window.pageYOffset: khoảng cách scroll của window theo chiều dọc so với phía trên cùng
+- window.pageXOffset: khoảng cách scroll của window theo chiều ngang so với phía bên trái
+
+Bài 208: Các phương thức, thuộc tính về scroll khác
+- scrollHeight: trả về chiều cao của element bao gồm padding, nhưng ko có border
+- scrollWidth: trả về chiều rộng của element bao gồm padding, nhưng ko có border
+- scrollTop: scroll của element đó so với phía trên của element đó
+- scrollLeft: scroll của element đó so với bên trái của element đó
+- scrollTo và scroll là 1: dùng để dịch chuyển scroll
+
+Bài 209: offsetWidth và scrollWidth
+- offsetWidth và offsetHeight nó sẽ lấy chiều rộng và chiều cao của phần tử đó
+- scrollWidth và scrollHeight nó sẽ thay đổi khi bên trong có phần tử con có chiều rộng và chiều cao lớn hơn khi đó nó sẽ lấy kích thước của phần tử con
+Bài 210: scrollIntoView()
+- Nó sẽ scroll tới phạm vi mà có thể nhìn thấy được
+Bài 211 212: Bài tập Fixed Header phần 1 2
+Bài 213 214: Bài tập Progress Bar phần 1 2
+Bài 215 216: Bài tập Tab Scroll phần 1 2
+Bài 217 218 219 220 221: Bài tập Tab Scroll nâng cao phần 1 2 3 4 5
+Bài 222: localStorage toàn tập
+- Giúp lưu trữ dữ liệu trên trình duyệt
+- localStorage.setItem("key", "value"): thiết lập value cho key
+- localStorage.getItem("key"): lấy value dựa vào cái key
+- localStorage.removeItem("key"): dùng để xóa dựa vào cái key
+- localStorage.clear(): dùng để xóa hết localStorage
+

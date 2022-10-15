@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="dropdown-select">
+        <span class="dropdown-select-text">Call to action</span>
+        <i class="fa fa-angle-down dropdown-down"></i>
+      </div>
+      <div class="dropdown-list">
+        <div class="dropdown-item">
+          <span class="dropdown-text">new project</span>
+          <i class="fa fa-plus"></i>
+        </div>
+        <div class="dropdown-item">
+          <span class="dropdown-text">view profile</span>
+          <i class="fa fa-user"></i>
+        </div>
+        <div class="dropdown-item">
+          <span class="dropdown-text">settings</span>
+          <i class="fa fa-gear"></i>
+        </div>
+        <div class="dropdown-item">
+          <span class="dropdown-text">logout</span>
+          <i class="fa fa-circle"></i>
+        </div>
+      </div>
+    </div>
+    <script src="./dropdown.js"></script>
+  </body>
+</html>

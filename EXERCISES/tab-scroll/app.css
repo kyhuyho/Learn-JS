@@ -1,0 +1,26 @@
+.tab {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.tab-list {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.tab-list::-webkit-scrollbar {
+  display: none;
+}
+.tab-item {
+  cursor: pointer;
+  padding: 10px 15px;
+  white-space: nowrap;
+  border-bottom: 2px solid #eee;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tab-item.active {
+  border-bottom-color: #6a5af9;
+}

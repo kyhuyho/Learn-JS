@@ -1,0 +1,77 @@
+Bài 7: Giới thiệu kiểu dữ liệu string
+- Các kiểu hiển thị chuỗi: double quotes(" "), single quotes(' '), backticks (template literal)(` `)
+VD: "Hello World";
+    "My name is Huy";
+    `I am Frontend developer`;
+Bài 8: Sử dụng string cơ bản
+- typeof: cho biết biến đó có kiểu dữ liệu gì
+- Nếu khai báo 1 string đơn giản thì ngta sử dụng dấu nháy đôi
+- Nếu sử dụng chung với biến thì ngta sử dụng backticks
+- ${variable}
+
+Bài 9: index và length trong string cần nắm
+- length: độ dài chuỗi
+- index: vị trí của từng ký tự trong chuỗi bao gồm cả khoảng trắng
+VD: const newStr = "My name is Huy and I am Frontend Developer";
+-> length: 42
+-> index: 0 -> 41
+
+Bài 10: Các phương thức trong string phần 1
+- split(" "): hàm tách chuỗi
+- chuỗi.split(" ") -> mảng các chữ
+- chuỗi.split("") -> mảng các ký tự
+- chuỗi.split("ko có ký tự nào trong chuỗi") -> ra lại chuỗi ban đầu
+- toLowerCase(): hàm biến chuỗi thành in thường
+- toUpperrCase(): hàm biến chuỗi thành in hoa
+- startsWith("..."): hàm cho biết chuỗi string bắt đầu với chữ gì -> trả về true or false
+- endtsWith("..."): hàm cho biết chuỗi string kết thúc với chữ gì -> trả về true or false
+- inclues("..."): hàm kiểm tra có chứa chuỗi đó trong chuỗi ban đầu hay không -> trả về true or false
+- indexOf("..."): hàm trả về vị trí đầu tiên tìm thấy của ký tự
+- lastIndexOf("..."): hàm trả về vị trí cuối cùng tìm thấy của ký tự
+
+Bài 11: Các phương thức trong string phần 2
+- replace("...","..."): hàm thay thế chuỗi
+- repeat(số lần muốn lặp): hàm lặp lại số lần chuỗi
+- slice(start, end+1): hàm tạo ra chuỗi mới từ chuỗi đã có trước
+- trim(): hàm xóa khoảng trắng(bên trái và phải)
+- trimStart(): hàm xóa khoảng trắng bên trái
+- trimEnd(): hàm xóa khoảng trắng bên phải
+- charAt(số): hàm trả về ký tự thứ (số) trong chuỗi
+
+Bài 12: Phân biệt substr và substring
+- substr(index , length): hàm lấy ra 1 phần của chuỗi
+-> index: vị trí, length: số lượng ký tự muốn lấy
+- substring(start index, end index): hàm lấy ra các ký tự của chuỗi
+
+Bài 13: Sử dụng nhiều phương thức của string cùng lúc
+
+Bài 14: Tìm hiểu kiểu dữ liệu number phần 1
+- parseInt(value): hàm chuyển chuỗi số thành số nguyên
+- parseFloat(value): hàm chuyển chuỗi số thành số thực
+- Math.abs(value): hàm giá trị tuyệt đối
+- Math.floor(value): hàm làm tròn xuống
+- Math.ceil(value): hàm làm tròn lên
+- Math.round(value): hàm làm tròn gần nhất
+- to.Fixed(value): hàm lấy số chữ số sau dấu chấm (chuỗi)
+- Math.random(): hàm random ra số từ 0 -> 1
+- Math.max(value1,value2,value3,....,value_n): hàm tìm GTLN
+- Math.min(value1,value2,value3,....,value_n): hàm tìm GTNN
+- Math.pow(value1, value2): hàm mũ
+
+Bài 15: Tìm hiểu kiểu dữ liệu number phần 2
+- isNaN(value): hàm chuyển đổi thành số
+-> NaN: Not a Number: ko phải số -> trả về true or false
+- Number.isNaN(value) -> false
+- Number.isNaN(NaN) -> true
+
+Bài 16: Các kiểu dữ liệu khác
+1. undefined
+- Khai báo nhưng chưa gán giá trị
+2. null
+- Nothing: trống rỗng
+3. boolean
+- true or false
+- falsy values và truthy values
+- falsy values: "", 0, false, undifined, null, NaN
+-> những cái còn lại là truthy values
+- truthy values: "abc", 1, true, 100,...

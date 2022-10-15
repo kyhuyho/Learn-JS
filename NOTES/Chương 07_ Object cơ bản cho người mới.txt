@@ -1,0 +1,70 @@
+Bài 91: Tìm hiểu object cơ bản phần 1
+- object: là 1 kiểu dữ liệu trong JS là 1 tập hợp các key và value
+- Có 2 cách khai báo object
++ Cách 1: object literal
++ Cách 2: object constructor
+- const nameObject = {
+  key(properties): value
+  ...
+};
+-> value là những kiểu dữ liệu đã học
+
+Bài 92: Tìm hiểu object cơ bản phần 2
+- Có 2 cách truy xuất giá trị của object
++ Cách 1: Dot notation -> object.key
++ Cách 2: Bracket notation object["key"]
+- Thay đổi giá trị của object
+-> object.key = value hoặc object["key"] = value
+- Thêm giá trị trong object
+-> object.key = value hoặc object["key"] = value
+- Xóa giá trị trong object
+-> delete student.key hoặc student["key"]
+
+Bài 93: Tìm hiểu for in trong object
+- for in: dùng để duyệt qua các key trong object
+
+Bài 94: Tìm hiểu phương thức Object.keys
+- Trả về 1 mảng chưa tất cá các key của object
+
+Bài 95: Tìm hiểu phương thức Object.values
+- Trả về 1 mảng chưa tất cá các value của object
+
+Bài 96: Tìm hiểu phương thức Object.entries
+- Trả về 1 mảng nested gồm các cặp key và value
+
+Bài 97: Tìm hiểu phương thức Object.assign
+- Dùng để gộp nhiều object lại với nhau
+-> Có thể dùng spread operator để gộp object
+
+Bài 98: Tìm hiểu phương thức Object.freeze
+- Ngăn chặn chỉnh sửa key và value của object
+
+Bài 99: Tìm hiểu phương thức Object.seal
+- Cho phép chỉnh sửa key value nhưng ko được thêm key value mới
+
+Bài 100: Cách sao chép một object
+- Dùng spread operator
+
+Bài 101: Cách sao chép một object phức tạp
+- Object.assign() và spread operator ko thể copy nested object
+-> Dùng JSON
+
+Bài 102: Từ khoá this trong object
+- this nó sẽ đề cập đến object gần nhất
+
+Bài 103: Optional chaining
+- Để check những cái key trong object
+- object.key1?.key2?.keyN(?)
+-> Nếu object ko có key này thì trả về undefined
+
+Bài 104: Destructuring object
+- const/let [indexName, indexName, indexName,...] = object
+- rest parameter: trả về 1 object chứa các phần tử còn lại
+
+Bài 105: Bài tập chương 7 số 1
+Bài 106: Bài tập chương 7 số 2
+- hasOwnProperty(key): kiểm tra object có chứa cái key hay ko. Nếu có thì trả về true ngược lại trả về false
+Bài 107: Bài tập chương 7 số 3
+Bài 108: Bài tập chương 7 số 4
+
+

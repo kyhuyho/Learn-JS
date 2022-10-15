@@ -1,0 +1,55 @@
+Bài 230: Giới thiệu Regular expression
+- Regular expression: biểu thức chính quy
+- 2 cách khai báo Regex
++ /.../
++ new RegExp("...")
+- regex.test(value): trả về true or false
+
+Bài 231: Anchor
+- Anchor ^ $
+-> ^: string bắt đầu với từ nào đó
+-> $: string kết thúc với từ nào đó
+
+Bài 232: Ranges
+- ranges []
+-> [a-z]: các lí tự từ a đến z in thường
+-> [A-Z]: các lí tự từ A đến Z in hoa
+-> [0-9]: các số từ 0 đến 9
+-> [a-z0-9A-Z]: các số từ 0 đến 9 hoặc từ a -> z hoặc từ A -> Z
+
+Bài 233: Meta characters
+- \d: khớp với số nó sẽ tương đương vs [0-9]
+- \D: ngược lại với \d tương đương với [^0-9]
+- \w: khớp với các ký tự và dấu gạch dưới và số, nó sẽ tương đương với [a-z0-9A-Z_]
+- \W: ngược lại với \w
+- \s: khớp với lại ký tự khoảng trắng: space, tab, newline,...
+- \S: các ký tự không phải khoảng trắng, ngược lại với \s
+- \n: khớp với newline(xuống hàng)
+- \t: khớp với lại tab character
+- . : khớp với tất cả mọi thứ ngoại từ newline(\n)
+- [^]: khớp với tất cả mọi thứ bao gồm newline(\n)
+
+Bài 234 235: Quantifiers 
+- {n}, {n+m} + ? *
+- string.match(regex): trả về 1 mảng
+VD: "abc".match(/\d/) -> []
+- {n}: số lượng nhất định
+- {n,m}: số lượng trong khoảng từ n đến m
+- +: nó sẽ lấy 1 hoặc nhiều ký tự
+- ?: có thể có 1 hoặc ko có ký tự nào đó
+- *: có thể ko có hoặc là nhiều hoặc là có 1
+- flag
++ g: global(lấy nhiều và trả về 1 mảng)
++ i: case insensitive(ko dùng thì phần biệt hoa thường còn dùng thì k phân biệt)
++ m: multipe lines(dùng nhiều hàng)
+
+Bài 236: Group
+Bài 237: Boundaries và escaping
+- escaping: \ / [ ] ( ) { } ? + * | . ^ $
+- boudaries: \b \B
++ \b: lấy chữ đó đứng 1 mình(đầu chuỗi, cuỗi chuỗi, giữa chuỗi)
++ \B: ngược lại với \b có nghĩa là phải dính với 1 chữ nào đó
+
+Bài 238: Replace với regex
+Bài 239 240 241: Bài tập email validation
+Bài 242 243 244 245: Bài tập password validation

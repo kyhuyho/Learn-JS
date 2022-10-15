@@ -1,0 +1,63 @@
+Bài 40: Tìm hiểu về date phần 1
+- new Date(): build-in object -> in ra thời gian hiện tại
+
+Bài 41: Timestamp & Epoch time
+- timestamp: tính ra kết quả là miliseconds
+- epoch time : 1/1/1970
+- timestamp dựa vào epoch time
+
+Bài 42: 4 cách khởi tạo date cơ bản
+- Cách 1: new Date(): in ra thời gian hiện tại
+- Cách 2: new Date(timestamp): dựa vào timestamp để in ra ngày giờ
+- Cách 3: new Date(date string)
+- Cách 4: new Date(year, month, day, hours, minutes, seconds, miliseconds)
+-> month trong JS tính từ số 0 có nghĩa là số 0 là tháng 1, ...
+
+Bài 43: Các hàm get trong Date
+- getFullYear(): hàm lấy ra năm
+- getMonth(): hàm lấy ra tháng
+-> chạy từ 0-11: 0 là tháng 1,...,11 là tháng 12
+- getDate(): hàm lấy ra ngày của tháng (từ 1-31)
+- getDay(): hàm in ra thứ của tuần
+-> chạy từ 0-6: 0 là chủ nhật,1 là thứ 2,...
+- getHours(): hàm lấy ra giờ
+- getMinutes(): hàm lấy ra phút
+- getSeconds(): hàm lấy ra giây
+- getMilliSeconds(): hàm lấy ra milli giây
+
+Bài 44: Các hàm set trong Date
+- setFullYear(value): set năm
+- setMonth(value): set tháng
+- setDate(value): set ngày của tháng
+- setHours(value): set giờ
+- setMinutes(value): set phút
+- setSeconds(value): set giây
+- setMilliseconds(value): set milli giây
+- setTime(value): set timestamp
+
+Bài 45: Tìm hiểu UTC trong Date
+- Những hàm get và set ở trên thì nó sẽ lấy theo múi giờ người dùng
+- Còn UTC thì nó sẽ lấy thời gian theo thời gian quốc tế
+
+Bài 46: Tìm hiểu các hàm khác
+- toDateString(): hàm trả về thứ, ngày, tháng, năm
+- toTimeString(): hàm trả về giờ
+- toLocaleDateString(): hàm trả về MM/dd/yyyy
+- toLocaleDateString("vi-VI"): hàm trả về dd/MM/yyyy
+- toISOString(): ...
+
+Bài 47: Bài tập đơn giản về Date
+
+Bài 48: setimeout và setInterval
+- setTimeout(): nói cách khác setTimeout sẽ thực hiện 1 chức năng nào đó sau 1 thời gian (ms) nhất định, được dùng trong 1 khoảng thời gian nhất định
+- clearTimeout(): dừng lại thời gian
+- setInterval(): chạy hoài 1 chức năng nào đó (đếm ngược)
+- clearInterval(): dừng lại thời gian
+
+Bài 49: Bài tập chương 5
+
+Bài 50: Giải bài tập chương 5 bài 1
+
+Bài 51: Giải bài tập chương 5 bài 2
+
+Bài 52 53 54: Giải bài tập chương 5 bài 3

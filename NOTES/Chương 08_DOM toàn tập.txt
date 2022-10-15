@@ -1,0 +1,169 @@
+Bài 109: Dom là gì
+- DOM(Document Object Model): là những cái ở HTML mà ta đã gặp
+- Những thẻ HTML gọi là DOM node
+- Những thuộc tính của thẻ như src, href, type, ... gọi là DOM attribute
+
+Bài 110: document.querySelector
+- document.querySelector("selector"): trả về 1 node nếu tồn tại selector đó, ngược lại nó sẽ trả về null
+
+Bài 111: document.querySelectorAll
+- document.querySelectorAll("selector"): trả về 1 NodeList chứa danh sách các node, nếu ko có selector thì sẽ trả về empty
+- NodeList giống như mảng nhưng ko phải mảng, có thể loop và forEach() ko thể sử dụng các phương thức như trong mảng
+
+Bài 112: document.getElementsByClassName
+- document.getElementsByClassName("className"): trả về 1 HTMLCollection chứa danh sách các node, nếu ko có thì trả về empty
+- HTMLCollection cũng giống mảng nhưng ko phải mảng, có thể loop ko thể sử dụng các phương thức như trong mảng
+
+Bài 113: document.getElementsByTagName
+- document.getElementsByTagName("tagname"): trả về 1 HTMLCollection chứa danh sách các node, nếu ko có thì trả về empty
+- HTMLCollection cũng giống mảng nhưng ko phải mảng, có thể loop ko thể sử dụng các phương thức như trong mảng
+
+Bài 114: document.getElementById
+- document.getElementById("id"): trả về 1 node nếu tồn tại id đó, ngược lại nó sẽ trả về null
+* Có 2 cái hay dùng nhất là document.querySelector("selector") và document.querySelector("selector")
+
+Bài 115: getAttribute
+- Attribute: thuộc tính: href, id, class, src, style,...
+- selector 1 cái -> selector.getAttribute("attribute"): lấy ra giá trị của attribute của selector
+- selector 2 cái trở lên -> for, for of, forEach
+
+Bài 116: setAttribute
+- selector.setAttribute("attribute", value): set giá trị cho attribute nào đó của selector
+- selector 1 cái -> selector.setAttribute("attribute", value)
+- selector 2 cái trở lên -> for, for of, forEach
+
+Bài 117: removeAttribute
+- selector.removeAttribute("attribute"): xóa attribute của selector
+- selector 1 cái -> selector.removeAttribute("attribute")
+- selector 2 cái trở lên -> for, for of, forEach
+
+Bài 118: hasAttribute
+- selector.hasAttribute("attribute"): kiểm tra selector có attribute nào đó hay ko, nếu có trả về true ngược lại thì trả về false
+
+Bài 119: Thuộc tính textContent
+- textContent: nó sẽ lấy được nội dung nằm giữa selector đó bao gồm khoảng trắng phía trước và phía sau
+- Dù có chèn thêm thể HTML bên trong thì nó vẫn sẽ lấy được nội dung trong thẻ HTML đã chèn
+
+Bài 120: Thuộc tính innerText
+- innerText: nó sẽ lấy được nội dung nằm giữa selector nhưng nó sẽ xóa hết đi khoảng trắng phía trước và phía sau
+- Dù có chèn thêm thể HTML bên trong thì nó vẫn sẽ lấy được nội dung trong thẻ HTML đã chèn nhưng ko lấy được nếu có display:none
+
+Bài 121: Thuộc tính innerHTML
+- innerHTML: lấy ra nội dung của selector bao gồm cả thẻ HTML
+
+Bài 122: Các phương thức liên quan đến class phần 1
+- selector.classList.add("className"): thêm class vào thẻ HTML
+- selector.classList.remove("className"): xóa class vào thẻ HTML
+- selector.classList.contains("className"): kiểm tra class có tồn tại ko và trả về true false
+- selector.classList.toggle("is-active"): nếu có class đó rồi thì nó sẽ xóa nó đi còn nếu chưa có thì nó sẽ thêm vào
+
+Bài 123: Các phương thức liên quan đến class phần 2
+- Khi add class thì phải add liền ko dc add khoảng trắng
+- selector.className: trả về chuỗi các class của selector đó
+- Nếu muốn xóa đi nhiều class của thẻ HTML ta có thể dùng selector.className = "tên class"
+
+Bài 124: Ví dụ toggle menu đơn giản với toggle class
+Bài 125: document.createElement và document.appendChild
+- document.createElement("tag"): tạo ra element trong JS
+- selector.appenChild -> document.body hoặc document.querySelector("body").appendChild(document.createElement("tag")): hiển thị tag vừa thêm lên web
+
+Bài 126: Thực hành phương thức document.appendChild
+Bài 127: document.createTextNode
+- document.createTextNode("string"): tạo ra text
+
+Bài 128: Phương thức cloneNode
+- element/selector.cloneNode(true): sao chép nguyên nội dung, nếu ko để gì hết thì chỉ copy được cái element
+
+Bài 129: Phương thức hasChildNodes
+- element/selector.hasChildNodes(): kiểm tra element có phần tử con hay ko nếu có thì trả về true nếu ko có thì trả về false
+
+Bài 130: Phương thức insertAdjacentText
+- element/selector.insertAdjacentText("position", "text"): dùng để thêm text vào 4 vị trí
+- position có 4 cái: beforebegin, afterbegin, beforeend, afterend
+
+Bài 131: Phương thức insertAdjacentElement
+- element/selector.insertAdjacentElement("position", node): dùng để thêm thẻ HTML vào 4 vị trí
+
+Bài 132: Phương thức insertAdjacentHTML
+- element/selector.insertAdjacentElement("position", template): dùng để thêm 1 list thẻ HTML vào 4 vị trí
+
+Bài 133: Traversing DOM phần 1
+- traversing: truy suất phần tử trước nó, sau nó
+- parentNode và parenrElement nó sẽ lấy ra phần tử cha gần nhất
+- selector.parentNode.removeChild(selector) hoặc selector.parentElement.removeChild(selector)
+
+Bài 134: Traversing DOM phần 2
+- nextElementSibling: element đứng sau element hiện tại
+- previousElementSibling: element đứng trước element hiện tại
+- childNodes: trả về hết các node bên trong bao gồm textNodes (NodeList)
+- children: trả về các node k bao gồm textNodes (HTML Collection)
+- firstChild: trả về phần tử con đầu tiên
+- firstElementChild: trả về element con đầu tiên
+- lastChild: trả về phần tử con cuối cùng
+- lastElementChild: trả về element cuối cùng
+
+Bài 135: Traversing DOM phần 3
+- nextSibling: giống nextElementSibling nhưng nếu có textNodes thì nó sẽ lấy
+- previousSibling: giống previousElementSibling nhưng nếu có textNodes thì nó sẽ lấy
+Chú ý: khi muốn lấy tiếp theo thì cứ chấm tiếp(.)
+
+Bài 136 137: Bài tập Active Modal phần 1 2
+- Cách 1: code HTML ngoài file HTML
+- Cách 2: dùng insertAdjacentHTML
+- Cách 3: áp dụng những kiến thức đã học
+
+Bài 138 139: Bài tập Notification phần 1 2
+Bài 140: Các thuộc tính liên quan tới offset
+- offsetWidth: trả về chiều rộng thực sự của phần tử
+- offsetHeight: trả về chiều cao thực sự của phần tử
+- offsetLeft: trả về khoảng cách của phần tử so với bên trái
+- offsetTop: trả về khoảng cách của phần tử so với bên trên
+- offsetParent: lấy ra phần tử cha để lấy giá trị của phần tử cha
+
+Bài 141: Các thuộc tính liên quan tới client
+- clientWidth: độ rộng của phần tử trừ đi border 2 bên trái và phải
+- clientHeight: chiều cao của phần tử trừ đi border 2 bên trên và dưới
+- clientLeft: border-left
+- clientTop: border-top
+-> clientLeft và clientTop chính là độ dày của border
+
+Bài 142: Các thuộc tính liên quan tới window
+- window.innerHeight: là chiều cao mà trang web hiển thị
+- window.outerHeight: là chiều cao tính luôn web hiển thị và bên ngoài vùng web ko hiển thị
+- window.innerWidth: là chiều rộng mà trang web hiển thị
+- window.outerWidth: là chiều rộng tính luôn web hiển thị và bên ngoài vùng web ko hiển thị
+
+Bài 143: Tìm hiểu getBoundingClientRect()
+- Lấy ra tọa độ, kích thước của selector dưới dạng 1 object
+- left, x: vị trí của phần tử so với bên trái
+- top, y: vị trí của phần tử so với bên trên
+- bottom: chiều cao của khối + top
+- right: độ rộng của khối + left
+- width, height: độ rộng và chiều cao
+
+Bài 144: Sự khác nhau giữa NodeList và HTMLCollection
+- Giông nhau: có thể truy cập index, có length, dùng được for và for of và ko sử dụng được những phương thức của mảng
+- Khác nhau:
++ HTMLCollection: ko dùng được forEach()
++ NodeList: sử dụng được forEach()
+
+Bài 145: Sự khác nhau giữa parentNode và parentElement
+- parentElement có thể null còn parentNode thì ko
+
+Bài 146: Tìm hiểu document.title và document.head
+- document.title: thẻ title của trang web
+- document.head: thẻ head của trang web
+
+Bài 147: Tìm hiểu thêm phương thức insertBefore
+- parentNode.insertBefore(newnode, existingnode): di chuyển 1 node mình muốn ra trước 1 node đã tồn tại
+
+Bài 148: Tìm hiểu thêm phương thức replaceChild
+- node.replaceChild(newnode, oldnode): thay thế node 
+- Có 2 cách để chuyển HTMLCollection, NodeList thành Array
++ Cách 1: Array.from(HTMLCollection or NodeList)
++ Cách 2: [...HTMLCOLLECTION], [...NodeList]
+- Những selector đặc biệt: html, body, head, title
++ html: document.documentElement
++ body: document.body
++ head: document.head
++ title: document.title

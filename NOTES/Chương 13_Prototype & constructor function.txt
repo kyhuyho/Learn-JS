@@ -1,0 +1,18 @@
+Bài 292: constructor function là gì ?
+- Declaration: constructor function bắt đầu với chữ cái đầu là in hoa
+- new: dùng để khai báo 1 empty object
+- this: là object đó
+- method
+- caution
+
+Bài 293: Prototype là cái gì ?
+- Prototype là cha của object đó mà ta sử dụng
+
+Bài 294 295: Tìm hiểu Bind phần 1 2
+- bind(): là 1 hàm nằm trong function prototype chỉ có function mới dùng được
+- bind(): dùng để xác định this của 1 function
+- bind(): còn dùng để bind các tham số truyền vào cho function, còn dùng để viết parse to function
+- parse to function là tạo ra 1 fn mới bằng cách gán mặc định 1 số tham số cho fn cũ đó
+
+Bài 296: Sự khác nhau giữa call và apply
+- Gần giống bind nhưng ko lưu vào biến mà gọi là nó chạy luôn

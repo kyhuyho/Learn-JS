@@ -1,0 +1,68 @@
+Bài 17: Tìm hiểu hàm Number
+- Number(value): hàm chuyển đổi thành số
+
+Bài 18: Tìm hiểu hàm String
+- String(value): hàm chuyển đổi thành chuỗi 
+
+Bài 19: Tìm hiểu hàm Boolean
+- Boolean(value): hàm trả về true or false
+
+Bài 20: Type coercion là gì ?
+- Chuyển đổi dữ liệu từ kiểu này sang kiểu khác
+- Đối với phép -,*,/ thì JS sẽ chuyển thành Number và xuất ra tab console là màu tím (ko phải chuỗi)
+- Đối với phép + có string thì JS sẽ chuyển thành String và xuất ra tab console là màu trắng (là chuỗi), còn ko có string thì JS sẽ chuyển thành Number
+và xuất ra tab console là màu tím (ko phải chuỗi)
+
+Bài 21: Toán tử so sáng cơ bản
+- >,<,>=,<= -> trả về true or false
+
+Bài 22: Toán tử logic cơ bản
+- &&,||,! -> trả về true or false
+
+Bài 23: So sánh == vs ===
+- ==: loose equality: so sánh theo giá trị
+- ===: strict equality: so sánh theo kiểu
+-> ==: Khi so sánh chuỗi với một số, JS sẽ chuyển đổi bất kỳ chuỗi nào thành một số. 
+Một chuỗi rỗng luôn được chuyển đổi thành không. 
+Một chuỗi không có giá trị số được chuyển đổi thành NaN (Không phải số), trả về false.
+-> ===: là một toán tử so sánh bình đẳng nghiêm ngặt trong JS, trả về false cho các giá trị không cùng loại. 
+Toán tử này thực hiện ép kiểu cho bình đẳng.
+Nếu chúng ta so sánh 2 với “2” bằng cách sử dụng ===, thì nó sẽ trả về một giá trị sai.
+
+Bài 24: Câu điều kiện cơ bản
+- if(condition) {
+   code
+}
+- else if(condition) {
+   code
+}
+- else {
+  code
+}
+
+Bài 25: alert, prompt và confirm
+- alert("..."): thông báo khi mới load trang web
+- prompt("...","..."): nhập 1 giá trị nào đó vào và xuất ra khi web mới load lên
+- confirm("..."): thông báo xác nhận -> trả về true or false
+
+Bài 26: Bài tập về if-else
+
+Bài 27: Switch case
+- switch case(key) {
+ case value1:
+ // code
+ break;
+ case value2:
+ // code
+ break;
+ case value_n:
+ // code
+ break;
+ default:
+ // code
+ break;
+}
+
+Bài 28: ternary operator
+- Là dạng rút gọn của câu điều kiện
+- condition ? true : false

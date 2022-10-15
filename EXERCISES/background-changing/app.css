@@ -1,0 +1,11 @@
+.change {
+  border: 0;
+  padding: 20px;
+  color: white;
+  background-color: #6c7ee1;
+  border-radius: 10px;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+  font-size: 16px;
+}

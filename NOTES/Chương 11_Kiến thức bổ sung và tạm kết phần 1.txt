@@ -1,0 +1,24 @@
+Bài 246: Tìm hiểu defer trong script
+- defer: dùng để báo cho trình duyệt ko cần chờ cho script load xong
+- Khi sử dùng defer thì ko bị blocking page
+- Dùng trong trường hợp script cần DOM load xong hoặc những cái thư viện liên quan mà chúng ta muốn load theo thứ tự
+
+Bài 247: Tìm hiểu async trong script
+- Giống defer
+- async nó sẽ load độc lập ko phụ thuộc vào những cái script khác ko phụ thuộc vào DOM đã load hay chưa
+- Dùng trong trường hợp bên thứ 3
+
+Bài 248: Tìm hiểu removeEventListener
+- Dùng để xóa đi sự kiện 
+- Nó chỉ hoạt động khi function truyền vào là 1 function có tên hay nói cách khác là function viết riêng ra bên ngoài và truyền vào
+
+Bài 249: Sự khác nhau giữa onclick và addEventListener
+- Giống nhau: dùng để add sự kiện
+- Khác nhau: 
++ onclick: chỉ gán được 1 event handle
++ addEventListener: chấp nhận nhiều event handle cùng lúc
+
+Bài 250 251: Bài tập Animate on scroll phần 1 2
+Bài 252 253 254 255: Bài tập Countdown timer phần 1 2 3 4
+Bài 256 257 258 259 260 261: Bài tập Simple slider phần 1 2 3 4 5 6
+Bài 262 263 264 265 266 267 268: Bài tập MP3 player phần 1 2 3 4 5 6 7

@@ -1,0 +1,33 @@
+Bài 329: API là gì ?
+- Application Programming Interface
+- API: giống như 1 server có data trả data về cho chúng ta
+- endpoint là đường dẫn tới API đó mà ta cần lấy ra
+
+Bài 330 331: Ví dụ đơn giản với API phần 1 2
+- fetch(): dùng để fetch data từ API
+Bài 332 333: Bài tập API DadJoke phần 1 2
+Bài 334 335 336: Bài tập API Picsum Photos phần 1 2 3
+Bài 337: Cors là gì ?
+- Cross origin resoure sharing(chia sẻ tài nguyên giữa các origin)
+- same origin: cùng đồ men
+Bài 338: Các trạng thái khi gọi API
+- Hàng 2:
++ 200: Success (Mỗi lần get thì trả về, hoặc trả về khi thành công 1 cái gì đó)
++ 201: Create(Tạo dữ liệu thành công)
+- Hàng 3: redirect(điều hướng)
++ 301: Moved Permanently
++ 307: Temporary Redirect
+- Hàng 4: Lỗi
++ 400: Bad Request(mạng chậm)
++ 401: Forbidden(khi đăng nhập và API mà API yêu cầu đăng nhập mà chúng ta ko đăng nhập hay chưa đăng nhập mà chúng ta truy cập)
++ 404: Not found(ko tìm thấy)
++ 408: Request Timeout(khi request server lâu quá ko lấy được dữ liệu)
+- Hàng 5: server
++ 502: Bad Geteway
++ 504: Gateway Timeout
+Bài 339: Các methods trong API
+- POST: thêm dữ liệu
+- GET: lấy dữ liệu 
+- PUT: update toàn bộ dữ liệu
+- PATCH: update 1 phần dữ liệu
+- DELETE: xóa dữ liệu

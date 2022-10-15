@@ -1,0 +1,26 @@
+.text {
+  color: #3d6ef7;
+  font-size: 40px;
+  display: block;
+  margin: 200px auto;
+  width: max-content;
+  cursor: pointer;
+}
+.tooltip-text {
+  position: fixed;
+  background-color: #3d6ef7;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #3d6ef7;
+  bottom: 0;
+  left: 50%;
+  transform: rotate(45deg) translateY(50%);
+}

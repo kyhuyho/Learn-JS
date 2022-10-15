@@ -1,0 +1,172 @@
+body {
+  height: 500vh;
+  width: 500vw;
+}
+.menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  list-style: none;
+  background-color: gray;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+}
+.menu.is-show {
+  transform: translateX(0);
+}
+.menu-link {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 1.6rem;
+}
+
+/* Bài 136 137: Bài tập Active Modal phần 1 2 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.modal.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-content {
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #999;
+}
+.modal-desc {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.modal-action {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-submit,
+.modal-cancel {
+  display: block;
+  width: calc(50% - 10px);
+  padding: 8px;
+  cursor: pointer;
+  color: black;
+  border: 0;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.modal-submit {
+  background-color: #3d6ef7;
+}
+.modal-cancel {
+  background-color: #eee;
+}
+
+/* Bài 138 139: Bài tập Notification phần 1 2 */
+.noti {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 20px;
+  transform: translateY(150%);
+  animation: noti 5s forwards 1 linear;
+}
+
+.noti-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.noti-content {
+  padding: 10px;
+}
+@keyframes noti {
+  20%,
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+/* Bài 140: Các thuộc tính liên quan tới offset */
+.boxed {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin-left: 50px;
+  border: 10px solid pink;
+}
+
+/* Bài 150: Sự kiện click */
+.button {
+  display: block;
+  padding: 20px;
+  color: white;
+  background-color: #ffa400;
+  border: 0;
+  margin: 50px auto;
+  width: 300px;
+  cursor: pointer;
+}
+
+/* Bài 190: Sự kiện keydown */
+.input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  display: block;
+  width: 300px;
+  margin: 50px auto;
+}
+
+/* Bài 208: Các phương thức, thuộc tính về scroll khác */
+.boxed2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  overflow: auto;
+}
+.boxed2-content {
+  height: 600px;
+  width: 600px;
+}

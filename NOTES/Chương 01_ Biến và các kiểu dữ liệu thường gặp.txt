@@ -1,0 +1,29 @@
+Bài 1: Lời giới thiệu
+
+Bài 2: 2 cách chèn JS vào HTML
+- Cách 1: <script type="text/javascript"></script>
+- Cách 2: <script src="./TenFile.js"></script> -> file .js cùng cấp với file .html
+
+Bài 3: Tìm hiểu hàm console.log
+- Dùng để hiển thị cái mình muốn ra tab console trên trình duyệt
+VD: console.log("ABC");
+
+Bài 4: Kiến thức về biến cần nắm
+- Đặt tên biến theo camelCase: chữ cái đầu in thường, những chữ đầu tiên của các từ tiếp theo ghi hoa
+VD: firstNumber, secondNumber;
+
+Bài 5: Khai báo biến với const và let
+- Có 2 cách để khai báo biến: const và let
+- const: chỉ gán giá trị đc 1 lần, ko đc thay đổi lại -> khai báo duy nhất để sử dụng đi sử dụng lại ở nhiều chỗ
+- let: thay đổi đc giá tri -> khai báo duy nhất để sử dụng đi sử dụng lại ở nhiều chỗ
+VD: const a = 10;
+    a = 11; => error
+    let b = 12;
+    b = 13; => OK
+
+Bài 6 và 6.5: Hoisting
+- Là hành động mặc định của JS nó sẽ chuyển phần khai báo (biến) lên phía trên trước khi (biến) được gọi trong JS
+- Đối với "const" và "let" thì phải khai báo biến trước khi được gọi nếu không sẽ bị (Uncaught ReferenceError)
+- Data Types: number, string, boolean, undifined, null
+- Đối với khai báo biến dùng từ khóa "var" nếu gọi biến trước khi khai báo thì sẽ hoisting
+- Khi khai báo biến mà chưa gán giá trị mà xuất ra tab console đối với var với let thì sẽ undifined còn const sẽ báo lỗi
